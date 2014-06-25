@@ -31,10 +31,14 @@ public class Village implements Comparable<Village>, Cloneable {
                 this.villagers.size() < o.villagers.size() ? -1 : 0;
     }
 
-    public List<Person> getVillagers() throws CloneNotSupportedException {
+    public List<Person> getVillagers() {
         List<Person> result = new ArrayList<>();
         for (Person villager : villagers) {
-            result.add(villager.clone());
+            try {
+                result.add(villager.clone());
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
         }
         return villagers;
     }

@@ -7,7 +7,7 @@ public class VillageFactory {
     private VillageFactory() {
     }
 
-    public static Village getRandomVillage(int quantity) throws CloneNotSupportedException {
+    public static Village getRandomVillage(int quantity) {
         Village result = new Village();
         result.setName(RandomStringGetter.getString(RandomStringGetter.VILLAGE_NAME));
         for (int i = 0; i < quantity; i++) result.addPerson(PersonFactory.getRandomPerson());
