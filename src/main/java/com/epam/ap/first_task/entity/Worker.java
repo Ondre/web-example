@@ -32,7 +32,7 @@ public class Worker extends Person {
 
     @Override
     public String toString() {
-        return " {" + type + ": " + super.toString() + "}";
+        return "\n {" + type + ": " + super.toString() + "}";
     }
 
     public void doWork() {

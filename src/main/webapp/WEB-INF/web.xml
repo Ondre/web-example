@@ -13,7 +13,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>MyFirstServlet</servlet-name>
-        <url-pattern>/test</url-pattern>
+        <url-pattern>/sample</url-pattern>
     </servlet-mapping>
 
 </web-app>
